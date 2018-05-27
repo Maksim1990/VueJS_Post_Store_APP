@@ -11,12 +11,28 @@ new Vue({
         search:'90s',
         lastSearch:'',
         blnLoad:false,
-        price:FIXED_PRICE
+        price:FIXED_PRICE,
+        tips:[
+            '90s','80s','70s','anime'
+        ]
     },
     computed:{
       noMoreItems:function () {
         return  this.items.length===this.results.length && this.items.length>0;
-      }
+      },
+        infoTips:function () {
+          var infoResult="";
+          const TIPS_COUNT=this.tips.length;
+            this.tips.map(function(item,key) {
+                infoResult+=item;
+                //-- Add coma till element is the last in tips array
+                if(key<TIPS_COUNT-1){
+                    infoResult+=",";
+                }
+                return infoResult;
+            });
+            return  infoResult;
+        }
     },
     methods: {
         appendItems:function () {
