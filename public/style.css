@@ -235,3 +235,15 @@ h1 {
 .cart ul .cart-item button {
     margin-right: 3px;
 }
+
+form input[type="submit"]{
+    margin-right: 20%;
+}
+form span{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+form span>strong{
+    color: orange;
+}

@@ -20,7 +20,8 @@
         <form class="searchbar" @submit.prevent="onSubmit">
             <input type="text" v-model="search" placeholder="Search...">
             <input type="submit" value="Search" class="btn">
-            <span>INFO: You may use following example for searching {{infoTips}} or etc.</span>
+            <span>INFO: You may use following example for searching
+                <strong>{{infoTips}}</strong> or etc.</span>
         </form>
 
     </div>

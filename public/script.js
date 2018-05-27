@@ -27,7 +27,7 @@ new Vue({
                 infoResult+=item;
                 //-- Add coma till element is the last in tips array
                 if(key<TIPS_COUNT-1){
-                    infoResult+=",";
+                    infoResult+=", ";
                 }
                 return infoResult;
             });
