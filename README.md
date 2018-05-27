@@ -35,7 +35,7 @@
 2. Change directory into the local clone of the repository
 
     ```
-    cd vuejs-poster-shop
+    cd VueJS_Post_Store_APP
     ```
 
 3. Install dependencies
