@@ -13,7 +13,7 @@ new Vue({
         blnLoad:false,
         price:FIXED_PRICE,
         tips:[
-            '90s','80s','70s','anime'
+            '70s','thailand','history','anime'
         ]
     },
     computed:{
