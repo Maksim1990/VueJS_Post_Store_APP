@@ -54,4 +54,4 @@
 
 6. Your site will be available at *localhost:[PORT]* where `PORT` is whatever value is set in your `.env` file.
 
-![Mockup for feature A](/src/vueSshop_v1.png)
+![Mockup for feature A](https://raw.githubusercontent.com/Maksim1990/VueJS_Post_Store_APP/master/src/vueShop_v1.png)
