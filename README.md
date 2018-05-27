@@ -8,8 +8,6 @@
     Register for OAuth 2 authorization without a callback URL. You can name your application anything you like and you don't need a callback URL. The important thing is that you get a *client ID*. 
 
 
-###### Check out also my other applications and works: http://web.discoveringworld.net/
-
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)   **ATTENTION!** *Before running apllication run `npm install` command*
 
 > Fully reactive Vue.js application that is used<br />
