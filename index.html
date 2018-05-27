@@ -24,8 +24,11 @@
     </div>
     <div class="main">
         <div class="products">
-            <div class="search-results">
+            <div class="search-results" v-if="!blnLoad">
                 Found {{items.length}} results of {{search}} query
+            </div>
+            <div v-else>
+                Loading ...
             </div>
             <div class="product" v-for="(item,index) in items">
                 <div>
@@ -35,6 +38,7 @@
                 </div>
                 <div>
                     <h4 class="product-title">{{item.title}}</h4>
+                    <p>Price: <strong>{{price|currency}}</strong></p>
                     <button @click="addItem(index)" class="add-to-cart btn">Add to cart</button>
                 </div>
             </div>

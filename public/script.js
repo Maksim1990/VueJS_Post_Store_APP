@@ -6,17 +6,23 @@ new Vue({
         total: 0,
         items: [],
         cart: [],
-        search:'',
-        lastSearch:''
+        search:'90s',
+        lastSearch:'',
+        blnLoad:false,
+        price:FIXED_PRICE
     },
     methods: {
         onSubmit:function () {
+            //-- Reset current items before new ajax request
+            this.items=[];
+            this.blnLoad=true;
             this.$http
                 .get('/search/'.concat(this.search))
                 .then(
                 function (result) {
                     this.items=result.data;
                     this.lastSearch=this.search;
+                    this.blnLoad=false;
                 });
         },
         addItem: function (index) {
@@ -61,5 +67,8 @@ new Vue({
 
             return '$'+value.toFixed(2);
         }
+    },
+    mounted:function () {
+        this.onSubmit();
     }
 });
